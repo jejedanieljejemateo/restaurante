@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Logica/MasterPage.master.cs" Inherits="Presentacion_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Restaurante</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/web-font-->
+	<link href='//fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<!--/script-->
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+        });
+    });
+</script>
+<!-- swipe box js -->
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+	        jQuery(function ($) {
+	            $(".swipebox").swipebox();
+	        });
+	</script>
+<!-- //swipe box js -->
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+	    new WOW().init();
+	</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <!--start-home-->
+		<div class="banner" id="home">
+		<div class="header-bottom wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">
+		     <div class="container">
+			  <div class="fixed-header">
+			      <!--logo-->
+			       <div class="logo">
+                      <a href="inicio.aspx"><h1>R<span>estaurante</span></h1></a>
+					  <p><%:Session["nombreRest"]%></p>
+				   </div>
+					<!--//logo-->
+					<div class="top-menu">
+							<span class="menu"> </span>
+							<nav class="link-effect-4" id="link-effect-4">
+                              <ul>
+								 <li class="active"><a data-hover="Inicio" href="inicio.aspx">Inicio</a></li>
+								<li><a data-hover="Sobre&nbsp;Nosotros" href="sobre.aspx#abajo" >Sobre Nosotros</a></li>
+							    <li><a data-hover="Reservación" href="reserva.aspx#abajo" >Reservación</a></li>
+							    <li><a data-hover="Menú" href="menu.aspx#abajo">Menú</a></li>
+								<li><a data-hover="Contacto" href="contacto.aspx#abajo" >Contacto</a></li>
+                                <li><a data-hover="Mi&nbsp;Perfil" href="perfil.aspx#abajo" ><asp:Label ID="LB_Perfil" runat="server" Text='Mi Perfil'></asp:Label></a></li>
+                                <li><a data-hover="Iniciar&nbsp;Sesión" href="login.aspx"><asp:Label ID="LB_Iniciar" runat="server" Text='Iniciar Sesión'></asp:Label></a></li>
+                                <li><a><asp:LinkButton ID="LB_Cerrar" OnClick="LB_Cerrar_Click" runat="server" data-hover="Cerrar&nbsp;Sesión" Text='Cerrar Sesión'></asp:LinkButton></a></li>
+								</ul>
+							</nav>
+							</div>
+							<!-- script-for-menu -->
+								<script>
+								    $("span.menu").click(function () {
+								        $(".top-menu ul").slideToggle("slow", function () {
+								        });
+								    });
+								</script>
+								<!-- script-for-menu -->
+
+				 <div class="clearfix"></div>
+					<script>
+					    $(document).ready(function () {
+					        var navoffeset = $(".header-bottom").offset().top;
+					        $(window).scroll(function () {
+					            var scrollpos = $(window).scrollTop();
+					            if (scrollpos >= navoffeset) {
+					                $(".header-bottom").addClass("fixed");
+					            } else {
+					                $(".header-bottom").removeClass("fixed");
+					            }
+					        });
+
+					    });
+				</script>
+			 </div>
+		</div>
+	</div>
+		<div class="banner-slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider4">
+					    <li>
+						   <div class="banner-info">
+							      <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["titulo1"]%></h3>
+								  <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["texto1"]%></p>
+								     <div class="arrows wow slideInDown"  data-wow-duration="1s" data-wow-delay=".2s"><img src="images/border.png" alt="border"/></div>
+								 <span class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["eslogan"]%></span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							    <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["titulo2"]%></h3>
+								 <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["texto2"]%></p>
+								  <div class="arrows wow slideInDown"  data-wow-duration="1s" data-wow-delay=".2s"><img src="images/border.png" alt="border"/></div>
+								 <span class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["eslogan"]%></span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							      <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["titulo3"]%></h3>
+								  <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["texto3"]%></p>
+								   <div class="arrows wow slideInDown"  data-wow-duration="1s" data-wow-delay=".2s"><img src="images/border.png" alt="border"/></div>
+								   <span class="wow slideInUpslideInLeft"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["eslogan"]%></span>
+						   </div>
+					  </li>
+					</ul>
+			  </div>
+		<!--banner Slider starts Here-->
+	  	<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			     // You can also use "$(window).load(function() {"
+			     $(function () {
+			         // Slideshow 4
+			         $("#slider4").responsiveSlides({
+			             auto: true,
+			             pager: true,
+			             nav: false,
+			             speed: 500,
+			             namespace: "callbacks",
+			             before: function () {
+			                 $('.events').append("<li>before event fired.</li>");
+			             },
+			             after: function () {
+			                 $('.events').append("<li>after event fired.</li>");
+			             }
+			         });
+
+			     });
+			  </script>
+	      <!--banner Slider starts Here-->
+		 </div>
+
+		 <div class="down"></div>
+	</div>
+
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <!--footer-->
+		<div class="footer text-center">
+						<div class="container">
+							<!--logo2-->
+								   <div class="logo2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+									  <a href="inicio.aspx"><h2>R<span>estaurante</span></h2></a>
+									  <p><%:Session["nombreRest"]%></p>
+								   </div>
+					<!--//logo2-->
+								<!--<a href="single.html" class="flag_tag2">Where to find us?</a>
+									<ul class="social wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
+										<li><a href="#" class="tw"></a></li>
+										<li><a href="#" class="fb"> </a></li>
+										<li><a href="#" class="in"> </a></li>
+										<li><a href="#" class="dott"></a></li>
+										 <div class="clearfix"></div>
+									</ul>-->
+									<p class="copy-right wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".3s"><%:Session["nombreRest"]%> &copy; 2017. Todos los derechos reservados.</p>
+
+					 </div>
+	     </div>
+		<!--start-smooth-scrolling-->
+						<script type="text/javascript">
+						    $(document).ready(function () {
+						        /*
+                                var defaults = {
+                                    containerID: 'toTop', // fading element id
+                                    containerHoverID: 'toTopHover', // fading element hover id
+                                    scrollSpeed: 1200,
+                                    easingType: 'linear' 
+                                };
+                                */
+
+						        $().UItoTop({ easingType: 'easeOutQuart' });
+
+						    });
+								</script>
+								<!--end-smooth-scrolling-->
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+    </form>
+</body>
+</html>

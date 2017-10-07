@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="baseRestaurante" EntityNamespace="BaseRestauranteContext" ContextNamespace="BaseRestauranteContext" Class="BaseRestauranteDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="972c9bb5-09b8-4676-b2df-92ba886418ec" Provider="Devart.Data.PostgreSql.Linq.Provider.PgSqlDataProvider, Devart.Data.PostgreSql.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="User Id=postgres;Password=carajo14;Host=localhost;Database=baseRestaurante;Persist Security Info=True;Initial Schema=public" Provider="Devart.Data.PostgreSql" />
+  <Type Name="FMostrarPlatosCalificacionResult" ed:Guid="3c5a18cc-c2ad-4ec1-bb18-6df286866b63">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="dbadba5d-7302-4870-b482-5a5108e1a644" />
+    <Column Name="nombre_plato" Member="NombrePlato" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="6bcebbd6-ebd5-4a07-88de-71ff13cbe1f5" />
+    <Column Name="calificacion" Member="Calificacion" Type="System.Double" DbType="DOUBLE PRECISION" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="3e759fbc-b002-4bb4-8f99-2b3c54e06427" />
+  </Type>
+  <Type Name="FUsuarioNoAsistioResult" ed:Guid="cbb1efb1-3d75-4a41-8c3f-37ba43d4ff26">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="eb6af542-dacf-4ee3-9e75-8e5a4cb82055" />
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="97fd7ffc-9cac-45cd-9112-ad0d990b21ef" />
+    <Column Name="correo" Member="Correo" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="80efb3c2-54c0-43e6-9f6d-c37109f2f47c" />
+    <Column Name="cedula" Member="Cedula" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="67a631ed-2b2f-4220-8207-a2e0a5ee0fb6" />
+    <Column Name="telefono" Member="Telefono" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="b73040c4-f06e-4250-b137-6886407e6342" />
+    <Column Name="user_name" Member="UserName" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="c867e072-6e18-42c2-b83b-919363a601ba" />
+    <Column Name="clave" Member="Clave" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="947a6d5b-f210-43f2-9d87-b965597fe5d2" />
+    <Column Name="rol_id" Member="RolId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="74ea4c2f-d4da-41dc-a633-db2ad142f442" />
+    <Column Name="estado_usuario" Member="EstadoUsuario" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="b918fe67-e713-4319-bcf2-f4a92bda1db8" />
+    <Column Name="estado_reserva" Member="EstadoReserva" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="1796988e-1a79-439d-98b0-930dbddd95ac" />
+    <Column Name="ip" Member="Ip" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0e653f91-0c88-40a0-8b05-04421ca3f709" />
+    <Column Name="mac" Member="Mac" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0349aca1-02c8-48a5-94b3-dcc41b97f3c7" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="112cc0af-e4b2-4e9d-97af-112de48348e6" />
+    <Column Name="max_intentos" Member="MaxIntentos" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="5facb374-a3e3-4658-b311-be2cfc5f558d" />
+    <Column Name="numero_intentos" Member="NumeroIntentos" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="3a72d829-09c1-4372-867d-58371907ab66" />
+    <Column Name="fecha_bloqueo" Member="FechaBloqueo" Type="System.DateTime" DbType="TIMESTAMP" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a370c51c-1399-4c9b-ae08-07623f33ce03" />
+    <Column Name="numero_sesiones" Member="NumeroSesiones" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="03fbd9ef-b65f-48b4-9b53-3e33818523b7" />
+    <Column Name="sesiones_activas" Member="SesionesActivas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="e4b81965-75da-4933-b769-15a454fa54fd" />
+    <Column Name="activa" Member="Activa" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="921e724d-afd8-49f0-b1cd-faa5cacb6e00" />
+  </Type>
+  <Type Name="FCalcularCalificacionResult" ed:Guid="5e81c486-f26e-4870-a7d2-03d545757b0e">
+    <Column Name="return_value" Member="ReturnValue" Type="System.Boolean" DbType="BOOLEAN" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d5265e72-98c6-4f69-b5d8-6e5a947c95cb" />
+  </Type>
+  <Type Name="FContactoResult" ed:Guid="2d9f78b7-fb90-47ed-99f2-4b3ca6ada5e9">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="ab42b1a2-afee-48f0-b3d5-2854b1dbbd50" />
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="900c04bb-9b6f-4182-9684-7cbbd0d30446" />
+    <Column Name="email" Member="Email" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="c9f1cc28-adf5-49ef-aeef-242ad8d5fc41" />
+    <Column Name="telefono" Member="Telefono" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="33a887e9-6367-42e1-bf58-d65b3f3c754c" />
+    <Column Name="mensaje" Member="Mensaje" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="001ee49d-b023-43a9-8575-44ea2a739afc" />
+  </Type>
+  <Type Name="FMostrarTipoResult" ed:Guid="1cb56594-3721-4c27-8ed9-11cc09a9d131">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="54b288e0-9f92-4e29-a083-edd636d211d4" />
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="869b2601-84d1-4c49-9811-94f8025fe1e8" />
+    <Column Name="precio" Member="Precio" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="27986b64-87a8-4b60-9a40-aa64d990f78f" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="5052b5c6-adf2-4da0-9d10-a3dad47c64f7" />
+  </Type>
+  <Type Name="FEliminarPlatoResult" ed:Guid="e0026cd9-a659-4734-a1f8-2e1188db1b8c">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="89d02e8b-ef30-48bf-b410-c9d103307e15" />
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="42d67bed-43b1-48a6-bd66-29be1e4065ec" />
+    <Column Name="precio" Member="Precio" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="027b99ec-5579-4ec1-b59c-87fa7ee81563" />
+    <Column Name="descripcion" Member="Descripcion" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="1b9fdccf-7313-4705-909a-1b7a64de77fd" />
+    <Column Name="calificacion" Member="Calificacion" Type="System.Double" DbType="DOUBLE PRECISION" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="48670405-5597-477b-90b2-e001985ece29" />
+    <Column Name="url_imagen" Member="UrlImagen" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="57328632-f006-4e36-8017-7a2ab4c25e9c" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="6d0839a3-c5fc-4b6d-a292-3b0a07b47a5d" />
+  </Type>
+  <Type Name="FEliminarIngredienteResult" ed:Guid="545ca52c-205c-4891-acdf-68d85a67d6d5">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0c259acb-588b-4636-ba70-e7dabe10a93f" />
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d9df2058-43e8-4eb8-be05-d21eba997a17" />
+    <Column Name="cantidad" Member="Cantidad" Type="System.Double" DbType="DOUBLE PRECISION" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="1aceda93-9485-4079-9316-bc5e74ed563a" />
+    <Column Name="descripcion" Member="Descripcion" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="215d5a1b-d13b-4f63-b080-743157bcec68" />
+    <Column Name="minimo" Member="Minimo" Type="System.Double" DbType="DOUBLE PRECISION" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="adb375d6-05fd-491d-8d46-531f711458da" />
+    <Column Name="unidad" Member="Unidad" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="fa2c8e27-0e48-4a0b-9572-60be5c21415c" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="27c0ad27-60dd-4a14-9360-d85252535bfd" />
+  </Type>
+  <Type Name="FInformacionResult" ed:Guid="77422b06-f3ce-46a3-a2f6-18aafe3ebfde">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="74ead675-ad44-4069-994c-2447cddb945c" />
+    <Column Name="nombre_restaurante" Member="NombreRestaurante" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="90909c2e-fb7e-4f93-a0da-3d2aea92d5b0" />
+    <Column Name="mision" Member="Mision" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="53537dd6-3120-4d81-8b79-33df7807188d" />
+    <Column Name="vision" Member="Vision" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0980e821-4e80-4b15-90d9-b46424ebd22b" />
+    <Column Name="quienes" Member="Quienes" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="f3dafcb2-3ef7-49ac-9cf8-79f02142f797" />
+    <Column Name="eslogan" Member="Eslogan" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d53e62e1-8539-4fcd-89ba-eff854fd04c1" />
+    <Column Name="titulo1" Member="Titulo1" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="4ace337b-6354-4d25-9e44-4d2393a4c2dc" />
+    <Column Name="texto1" Member="Texto1" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="01f85a55-3a64-447d-a41d-937661354b33" />
+    <Column Name="titulo2" Member="Titulo2" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="6e8cdbdc-ab22-4b92-a4d5-16b1e98482d9" />
+    <Column Name="texto2" Member="Texto2" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="cc21a65b-8801-4c5c-a897-34eca72f2c28" />
+    <Column Name="titulo3" Member="Titulo3" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="8274df6f-6e6c-4e60-9ce3-ff78a4a4ee38" />
+    <Column Name="texto3" Member="Texto3" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="07907160-40da-49e6-9304-f9b6044a0e73" />
+    <Column Name="info_ubicacion" Member="InfoUbicacion" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="c3ac4908-9e31-4af1-9b04-56f646d8e718" />
+    <Column Name="ciudad" Member="Ciudad" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d598d54f-c031-4e41-b7ad-6e3c609f2853" />
+    <Column Name="direccion" Member="Direccion" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="8aa3b277-5bdf-4be3-a4a7-bd4dea66a959" />
+    <Column Name="mapa" Member="Mapa" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="53944dba-ec11-4b7b-a5d6-0bd94bde9d68" />
+    <Column Name="email" Member="Email" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="00558701-bc73-4cf4-be52-604f23607655" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="dd34c326-6654-48e0-80b5-d445249359db" />
+  </Type>
+  <Type Name="FReservaResult" ed:Guid="09fb333a-40d4-468e-b635-2b2e3008c020">
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="04271712-28b8-4b48-9c4e-2350e5ce5ceb" />
+    <Column Name="fecha_salida" Member="FechaSalida" Type="System.TimeSpan" DbType="TIME WITH TIME ZONE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="75f44a92-37a7-4af8-bbef-a8426c718be7" />
+    <Column Name="fecha_inicial" Member="FechaInicial" Type="System.TimeSpan" DbType="TIME WITH TIME ZONE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="42811ce7-d2e9-45b2-a09e-476b1d825a50" />
+    <Column Name="fecha_final" Member="FechaFinal" Type="System.DateTime" DbType="DATE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a0cade20-8a92-4657-a8e3-b536643c325d" />
+    <Column Name="nombre_estado" Member="NombreEstado" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="75cd4b7d-3d59-41dd-a3ed-473731477ca0" />
+    <Column Name="numero_de_personas" Member="NumeroDePersonas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="e85ea510-3aba-4137-b651-03936d3959eb" />
+    <Column Name="nuemero_de_sillas" Member="NuemeroDeSillas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="556d678f-24d0-4d6d-898a-59c87908e1d3" />
+    <Column Name="precio_total" Member="PrecioTotal" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="3d33d1d8-c662-4fdc-838d-2c0556ba2b10" />
+    <Column Name="tipo1" Member="Tipo1" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="96838726-c95b-46b1-ae40-211663233cca" />
+  </Type>
+  <Type Name="FReservaIdResult" ed:Guid="31a5c4cc-047b-42b8-a7c0-27b8f40b4ef6">
+    <Column Name="cant_personas" Member="CantPersonas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="dc5e3177-692f-4c3b-839b-14054b7ef925" />
+    <Column Name="precio_total" Member="PrecioTotal" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="9005ea91-94e9-44af-99c1-0e80e2ad41de" />
+    <Column Name="fecha" Member="Fecha" Type="System.DateTime" DbType="DATE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="6c1c4b59-5b63-43fb-bed5-e526754eff91" />
+    <Column Name="h_ini" Member="HIni" Type="System.TimeSpan" DbType="TIME WITH TIME ZONE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="ebff2153-9cb6-4e5b-a35f-82d411af3edd" />
+    <Column Name="nombre_plato" Member="NombrePlato" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a7c412c8-480f-4ac9-8fab-12d499e9f4c0" />
+    <Column Name="precio_unit" Member="PrecioUnit" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="9e6a5d86-fc7a-441e-9d7e-80560d93e74e" />
+    <Column Name="cantidad" Member="Cantidad" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="99765d9c-bd8b-4831-8dc0-5657bbbc28be" />
+    <Column Name="precio_total_plato" Member="PrecioTotalPlato" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="4b860cbd-d3ee-47bd-868b-73ae9cf4472c" />
+  </Type>
+  <Type Name="FMesaResult" ed:Guid="72f6b3b6-2f81-477c-a9ab-651d40d8fe15">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="fd445cd7-4582-443b-8569-3e703296e46b" />
+    <Column Name="sillas" Member="Sillas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="26977956-df16-43f3-a453-febe1a8cef71" />
+    <Column Name="estado_mesa" Member="EstadoMesa" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="cd619507-b001-4888-838f-b1ad2f80a1a4" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="ae2c24df-dbf2-4534-a65e-379a9a5533b6" />
+  </Type>
+  <Type Name="FOpcionesPlatoResult" ed:Guid="5701b787-cec8-4e93-9d1f-d287fe465019">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="b4e5f5e1-a4a9-4529-aac1-ca2099fb4cca" />
+    <Column Name="nombre_plato" Member="NombrePlato" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="518c4cc0-df92-48cb-81ab-95e7b941246d" />
+    <Column Name="cantidad" Member="Cantidad" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="763864aa-4209-4f6b-b7ec-7a2b791262fb" />
+    <Column Name="precio_unit" Member="PrecioUnit" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="ab63a4be-7cd1-4fe0-8991-5b450d992237" />
+    <Column Name="precio_total" Member="PrecioTotal" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="1ff1add0-8142-4f77-a5e5-d19e19997f66" />
+  </Type>
+  <Type Name="FClientesCalificacionResult" ed:Guid="365602b6-b1ec-47a3-a85d-c09d97ddcd37">
+    <Column Name="clientes" Member="Clientes" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d8f6a203-f969-481d-85ce-f45d93722114" />
+  </Type>
+  <Type Name="FInsertarIngrePlaResult" ed:Guid="b7145929-c578-47e0-9a85-00551c7c21ab">
+    <Column Name="plato_id" Member="PlatoId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="bd6ca323-dab1-49bb-8b55-702dd3072fc5" />
+    <Column Name="ingrediente_id" Member="IngredienteId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="e9fbad88-7fec-4dde-9eb8-ea2774698793" />
+    <Column Name="cantidad" Member="Cantidad" Type="System.Double" DbType="DOUBLE PRECISION" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="f0e2c74e-d886-4402-845f-a1d86dd2cf36" />
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="3e68ea57-dc1d-44c9-a341-3df944f02aeb" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="2270e993-0ad7-4526-a7c6-79d820b2278f" />
+  </Type>
+  <Type Name="FLoginResult" ed:Guid="37c139c6-dedc-482f-b0de-313179901734">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a436163c-aa2f-4022-9d7e-49e8634944c7" />
+    <Column Name="nombre" Member="Nombre" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="65f5d39d-96cf-4a5d-bcde-a0d8222129f4" />
+    <Column Name="clave" Member="Clave" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="56815f79-7845-48e7-bd4d-47c30d553a76" />
+    <Column Name="rol_id" Member="RolId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0f07908b-974d-442d-baa5-cc4893a90f4f" />
+    <Column Name="estado_reserva" Member="EstadoReserva" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="9beae0f1-edc0-4a50-9dba-cf63c6a2d394" />
+    <Column Name="estado_usuario" Member="EstadoUsuario" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="59c4d78c-24f2-4912-bc33-ee3438cf6fe3" />
+    <Column Name="sesiones_activas" Member="SesionesActivas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="e4946aa5-62d6-4965-9216-6f22f149d372" />
+    <Column Name="numero_intentos" Member="NumeroIntentos" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="ce4d6127-7343-44c1-84e4-dc83e0a162de" />
+    <Column Name="fecha_desbloqueo" Member="FechaDesbloqueo" Type="System.DateTime" DbType="TIMESTAMP" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="634264a1-9d71-40fd-bd78-69b8ad85f93f" />
+    <Column Name="fecha" Member="Fecha" Type="System.DateTime" DbType="DATE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="74b6ca7c-1f56-416c-9d9f-975e7ffa296c" />
+    <Column Name="h_sal" Member="HSal" Type="System.TimeSpan" DbType="TIME" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="aebd9186-ba62-48bd-b95c-ab743d6fd6f4" />
+    <Column Name="id_reserva" Member="IdReserva" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="65d8b07e-3449-4066-b916-f80008ae8157" />
+  </Type>
+  <Type Name="FOpcionesReservaResult" ed:Guid="db7e48e5-d3e9-4211-8927-c920d948966a">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="8d39c386-b62c-41e1-9130-a41636022b73" />
+    <Column Name="user_id" Member="UserId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="9b83ae34-6221-4668-82b5-0735d51927b1" />
+    <Column Name="cant_personas" Member="CantPersonas" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a01a3ff4-008b-400b-ba2c-a1931d9579ea" />
+    <Column Name="mesa_id" Member="MesaId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a47d6320-49ae-487a-87b3-600474d6755a" />
+    <Column Name="precio_total" Member="PrecioTotal" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="a0debb1f-cd57-45cb-b380-1f54f6ca0872" />
+    <Column Name="tipo_id" Member="TipoId" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="99f27651-ff68-4aa9-8cf1-4864e1a2be6f" />
+    <Column Name="fecha" Member="Fecha" Type="System.DateTime" DbType="DATE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="35a296f3-e0a8-4eb3-aca8-56d57e01c09a" />
+    <Column Name="h_ini" Member="HIni" Type="System.TimeSpan" DbType="TIME WITH TIME ZONE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="17cdeaa6-4e48-4c26-bd05-35464ac9b17e" />
+    <Column Name="h_sal" Member="HSal" Type="System.TimeSpan" DbType="TIME WITH TIME ZONE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="6d2abd7d-46fa-4bb5-8c73-951a9ce8f26d" />
+    <Column Name="modified_by" Member="ModifiedBy" Type="System.Int32" DbType="INT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="118e1082-0c96-4f03-8234-eb9ddfd4696f" />
+  </Type>
+  <Type Name="FUsuarioDisponibleResult" ed:Guid="73b71938-7acc-402b-8588-ebebf3a2bd23">
+    <Column Name="disponible" Member="Disponible" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0599f3b8-a154-4348-8e2a-4bf0deaa58cf" />
+  </Type>
+  <Type Name="FMostrarPlaIngreResult" ed:Guid="9bc2cede-6dd6-49f4-a5d0-09b725a59a70">
+    <Column Name="id" Member="Id" Type="System.Int64" DbType="BIGINT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="06806bd3-c4fb-4f01-b3dc-8f66f43ed988" />
+    <Column Name="nombre_plato" Member="NombrePlato" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="7bf2227d-494b-4d96-8cfb-21ea07e6b5b8" />
+    <Column Name="nombre_ingrediente" Member="NombreIngrediente" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0ecabceb-f049-4344-bb3a-e10add00403f" />
+    <Column Name="cantidad" Member="Cantidad" Type="System.Double" DbType="DOUBLE PRECISION" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="7f52def3-bee9-4f92-8c9b-64eaf31df4f1" />
+    <Column Name="unidad" Member="Unidad" Type="System.String" DbType="VARCHAR" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="0cc4d32c-cdd7-4e43-b7ca-39480b3accf9" />
+  </Type>
+  <Type Name="FAgendumResult" ed:Guid="6528456e-0364-4682-8854-e21edcd6a6b5">
+    <Column Name="fecha_reserva" Member="FechaReserva" Type="System.DateTime" DbType="DATE" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="f9ce91be-fbfe-47f7-8e63-d981a7450920" />
+  </Type>
+  <Function Name="public.f_mostrar_platos_calificacion" Method="FMostrarPlatosCalificacion" IsComposable="true" ed:Guid="5c9f14b5-1422-4566-b3be-5bf730b30c39">
+    <Parameter Name="_reserva_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FMostrarPlatosCalificacionResult" />
+  </Function>
+  <Function Name="public.f_usuario_no_asistio" Method="FUsuarioNoAsistio" IsComposable="true" ed:Guid="d924a698-3d07-451c-b235-d6859cee9023">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_calcular_calificacion" Method="FCalcularCalificacion" IsComposable="true" ed:Guid="a5366911-1007-41a2-bb83-24559d37710e">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_calificacion" Type="System.Double" DbType="DOUBLE PRECISION" />
+    <ElementType Type="FCalcularCalificacionResult" />
+  </Function>
+  <Function Name="public.f_contacto" Method="FContacto" IsComposable="true" ed:Guid="b91d0701-e0a4-4c57-a129-27944ebb9562">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_email" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_telefono" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_mensaje" Type="System.String" DbType="CHARACTER VARYING" />
+    <ElementType Type="FContactoResult" />
+  </Function>
+  <Function Name="public.f_mostrar_tipo" Method="FMostrarTipo" IsComposable="true" ed:Guid="a52f7791-6f7b-4d7d-8050-9d9f89f7b599">
+    <ElementType Type="FMostrarTipoResult" />
+  </Function>
+  <Function Name="public.f_eliminar_platos" Method="FEliminarPlato" IsComposable="true" ed:Guid="1f59cd7b-f68a-4579-8e22-81c490dbc68f">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_mostrar_usuarios" Method="FMostrarUsuario" IsComposable="true" ed:Guid="da73eb1b-608e-4ba1-b927-1de8b0bb3a95">
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_platos_cal1" Method="FPlatosCal1" IsComposable="true" ed:Guid="fe73a1a7-d57e-47e5-8471-6b1283a3b365">
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_usuario_desbloquear" Method="FUsuarioDesbloquear" IsComposable="true" ed:Guid="930a5e05-933a-426c-a06d-e60ae28fecc5">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_loginseguridad" Method="FLoginseguridad" ed:Guid="e1cf35f0-fe02-42e9-8aec-883ab4308b50">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="public.f_eliminar_ingredientes" Method="FEliminarIngrediente" IsComposable="true" ed:Guid="ad054247-8091-4199-ac16-09f090e52e92">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarIngredienteResult" />
+  </Function>
+  <Function Name="public.f_informacion" Method="FInformacion" IsComposable="true" ed:Guid="f8984465-45dd-4dc0-a2b5-2aedb5f87ed0">
+    <ElementType Type="FInformacionResult" />
+  </Function>
+  <Function Name="public.f_usuario_si_asistio" Method="FUsuarioSiAsistio" IsComposable="true" ed:Guid="a8e86fd2-671a-4d34-97c9-152e2639f64c">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_reservas" Method="FReserva" IsComposable="true" ed:Guid="588987b0-85d6-437e-b3d9-980b68f1b95f">
+    <ElementType Type="FReservaResult" />
+  </Function>
+  <Function Name="public.f_reserva_id" Method="FReservaId" IsComposable="true" ed:Guid="67c61cc7-edc8-425a-8aea-5b81c0d25b0b">
+    <Parameter Name="_user_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FReservaIdResult" />
+  </Function>
+  <Function Name="public.f_mesas" Method="FMesa" IsComposable="true" ed:Guid="7ef8249e-a253-45f9-9f44-4ee7704c98de">
+    <ElementType Type="FMesaResult" />
+  </Function>
+  <Function Name="public.f_logincerrar" Method="FLogincerrar" ed:Guid="657a1cec-56ac-417e-98d7-03daac7cb163">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="public.f_eliminar_mesas" Method="FEliminarMesa" IsComposable="true" ed:Guid="808ee45e-84c5-46b6-a25a-ca1996d96c47">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FMesaResult" />
+  </Function>
+  <Function Name="public.f_reservas2" Method="FReservas2" IsComposable="true" ed:Guid="7a5c1cad-0d4a-4dcb-98db-c0fd5c6a933b">
+    <ElementType Type="FReservaResult" />
+  </Function>
+  <Function Name="public.f_insertar_mesas" Method="FInsertarMesa" IsComposable="true" ed:Guid="43ef6114-0592-42a6-a28d-d80ac44b872f">
+    <Parameter Name="_sillas" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_estado_mesa" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FMesaResult" />
+  </Function>
+  <Function Name="public.f_modificar_tipo" Method="FModificarTipo" IsComposable="true" ed:Guid="e03bd129-b4d0-4b83-9413-5420bb3c985f">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_precio" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FMostrarTipoResult" />
+  </Function>
+  <Function Name="public.f_alerta" Method="FAlerta" IsComposable="true" ed:Guid="31be6fa3-050e-4621-ba23-3b22a6c5cbc6">
+    <ElementType Type="FEliminarIngredienteResult" />
+  </Function>
+  <Function Name="public.f_opciones_platos" Method="FOpcionesPlato" IsComposable="true" ed:Guid="cdebf648-b215-4b30-92aa-173961d89ff3">
+    <Parameter Name="_reserva_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FOpcionesPlatoResult" />
+  </Function>
+  <Function Name="public.f_clientes_calificacion" Method="FClientesCalificacion" IsComposable="true" ed:Guid="d78226b2-17f5-43f5-85b1-d4317784f7f3">
+    <Parameter Name="_plato_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FClientesCalificacionResult" />
+  </Function>
+  <Function Name="public.f_modificar_platos" Method="FModificarPlato" IsComposable="true" ed:Guid="95311ec2-2e8f-4827-8694-dfb59298e726">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_precio" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_descripcion" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_url_imagen" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_eliminar_reserva" Method="FEliminarReserva" IsComposable="true" ed:Guid="8191e37d-852f-4926-9a12-a941b0d41fb9">
+    <Parameter Name="_reserva" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FCalcularCalificacionResult" />
+  </Function>
+  <Function Name="public.f_ip_mac" Method="FIpMac" IsComposable="true" ed:Guid="9c1e0cf4-07d7-410c-91d7-82f05f6779b6">
+    <Parameter Name="_ip" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_mac" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_insertar_ingre_pla" Method="FInsertarIngrePla" IsComposable="true" ed:Guid="f5059756-4b60-45b9-a30d-3cee3b97b515">
+    <Parameter Name="_plato_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_ingrediente_id" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_cantidad" Type="System.Double" DbType="DOUBLE PRECISION" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FInsertarIngrePlaResult" />
+  </Function>
+  <Function Name="public.f_login" Method="FLogin" IsComposable="true" ed:Guid="bd185d85-e8c6-4828-9f72-65c8ceefa9f7">
+    <Parameter Name="_username" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_clave" Type="System.String" DbType="CHARACTER VARYING" />
+    <ElementType Type="FLoginResult" />
+  </Function>
+  <Function Name="public.f_hacer_reserva" Method="FHacerReserva" IsComposable="true" ed:Guid="ea166f4b-d016-433f-b623-a1aaa10066e8">
+    <Parameter Name="_personas" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_hora" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_fecha" Type="System.DateTime" DbType="DATE" />
+    <Parameter Name="_usuario" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FCalcularCalificacionResult" />
+  </Function>
+  <Function Name="public.f_eliminar_ingre_pla" Method="FEliminarIngrePla" IsComposable="true" ed:Guid="e7b7bcf6-4fd0-49be-a248-1377aaa255b4">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FInsertarIngrePlaResult" />
+  </Function>
+  <Function Name="public.f_mostrar_mensajes" Method="FMostrarMensaje" IsComposable="true" ed:Guid="7f328a7a-81ae-4b81-bdf0-72f7e6753da9">
+    <ElementType Type="FContactoResult" />
+  </Function>
+  <Function Name="public.f_insertar_plato_reserva" Method="FInsertarPlatoReserva" IsComposable="true" ed:Guid="5f5de663-248d-4421-a8fa-db6dfebec12a">
+    <Parameter Name="_plato" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_reserva" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_precio_unit" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_precio" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_cantidad" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FCalcularCalificacionResult" />
+  </Function>
+  <Function Name="public.f_opciones_reserva" Method="FOpcionesReserva" IsComposable="true" ed:Guid="b5a27334-10fe-4117-9be5-42b64f12c46d">
+    <Parameter Name="_user_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FOpcionesReservaResult" />
+  </Function>
+  <Function Name="public.f_platos2" Method="FPlatos2" IsComposable="true" ed:Guid="8a673071-2019-47df-ae5c-5a7e4632d86a">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_insertar_ingredientes" Method="FInsertarIngrediente" IsComposable="true" ed:Guid="b7db140d-647c-4ebf-a134-8aa65f161da8">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_cantidad" Type="System.Double" DbType="DOUBLE PRECISION" />
+    <Parameter Name="_descripcion" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_minimo" Type="System.Double" DbType="DOUBLE PRECISION" />
+    <Parameter Name="_unidad" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarIngredienteResult" />
+  </Function>
+  <Function Name="public.f_registro" Method="FRegistro" IsComposable="true" ed:Guid="ed275f0f-b13b-4eaa-8621-736d6a8a7332">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_correo" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_cedula" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_telefono" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_user_name" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_clave" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_rol_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_estado_usuario" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_estado_reserva" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_usuario_disponible" Method="FUsuarioDisponible" IsComposable="true" ed:Guid="19eeb75f-96bf-4f2d-abe9-db528d3c11fd">
+    <Parameter Name="_user_name" Type="System.String" DbType="CHARACTER VARYING" />
+    <ElementType Type="FUsuarioDisponibleResult" />
+  </Function>
+  <Function Name="public.f_modificar_info" Method="FModificarInfo" IsComposable="true" ed:Guid="b69c5970-8303-4b38-b175-36706600361a">
+    <Parameter Name="_nombre_restaurante" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_mision" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_vision" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_quienes" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_eslogan" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_titulo1" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_texto1" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_titulo2" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_texto2" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_titulo3" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_texto3" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_info_ubicacion" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_ciudad" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_direccion" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_mapa" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_email" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FInformacionResult" />
+  </Function>
+  <Function Name="public.f_terminar_calificacion" Method="FTerminarCalificacion" IsComposable="true" ed:Guid="700b848f-4cbe-4534-b466-a05e95cdc4bb">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FUsuarioNoAsistioResult" />
+  </Function>
+  <Function Name="public.f_ingredientes" Method="FIngrediente" IsComposable="true" ed:Guid="f360c432-55f7-475c-b298-1978c6bf1f81">
+    <ElementType Type="FEliminarIngredienteResult" />
+  </Function>
+  <Function Name="public.f_reserva_id2" Method="FReservaId2" IsComposable="true" ed:Guid="b683818f-c4e4-45d3-add3-45de184d807a">
+    <Parameter Name="_user_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FOpcionesReservaResult" />
+  </Function>
+  <Function Name="public.f_platos_cal2" Method="FPlatosCal2" IsComposable="true" ed:Guid="d4e49b0b-8b31-44b2-8fda-a5604152a6b8">
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_eliminar_plato_venta" Method="FEliminarPlatoVenta" IsComposable="true" ed:Guid="8a2bd1c0-baf3-4123-b77a-895316a7d917">
+    <Parameter Name="_plato_venta" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_reserva" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FCalcularCalificacionResult" />
+  </Function>
+  <Function Name="public.f_platos" Method="FPlato" IsComposable="true" ed:Guid="66b7f808-0094-410b-8232-bfaba55221a0">
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_mostrar_pla_ingre" Method="FMostrarPlaIngre" IsComposable="true" ed:Guid="076ea254-bfcc-4439-883a-de59a6760f94">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FMostrarPlaIngreResult" />
+  </Function>
+  <Function Name="public.f_modificar_mesas" Method="FModificarMesa" IsComposable="true" ed:Guid="ab7d2ec1-58d0-4b82-89b9-bb07dd62d9db">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_sillas" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FMesaResult" />
+  </Function>
+  <Function Name="public.f_modificar_ingredientes" Method="FModificarIngrediente" IsComposable="true" ed:Guid="1ae8f0e3-b1f4-40af-ac0e-d1887fd18918">
+    <Parameter Name="_id" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_cantidad" Type="System.Double" DbType="DOUBLE PRECISION" />
+    <Parameter Name="_descripcion" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_minimo" Type="System.Double" DbType="DOUBLE PRECISION" />
+    <Parameter Name="_unidad" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarIngredienteResult" />
+  </Function>
+  <Function Name="public.f_insertar_platos" Method="FInsertarPlato" IsComposable="true" ed:Guid="8511665c-fb07-4dac-b983-abd30ab87dd3">
+    <Parameter Name="_nombre" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_precio" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_descripcion" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_calificacion" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_url_imagen" Type="System.String" DbType="CHARACTER VARYING" />
+    <Parameter Name="_modified_by" Type="System.Int32" DbType="INTEGER" />
+    <ElementType Type="FEliminarPlatoResult" />
+  </Function>
+  <Function Name="public.f_agenda" Method="FAgendum" IsComposable="true" ed:Guid="d1381ea6-9b4b-4cfe-a8a9-9f8377ec2714">
+    <Parameter Name="_personas" Type="System.Int32" DbType="INTEGER" />
+    <Parameter Name="_hora" Type="System.String" DbType="CHARACTER VARYING" />
+    <ElementType Type="FAgendumResult" />
+  </Function>
+</Database>
